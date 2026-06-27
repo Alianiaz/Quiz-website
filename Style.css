@@ -35,43 +35,73 @@ h2{
     align-content: start;
 }
 
-.quiiz{
+.quiz{
+    min-height: 100vh;
+    margin: 100px;
+    padding: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    align-items: center; 
 }
 
 .data{
-   width: 300px;
-   height: 300px;
+    display: flex;
+    flex-direction: column;
+   width: 350px;
+   min-height: 280px;
    color: rgb(255, 255, 255); 
    padding: 30px;
    border-radius: 15px;
-   box-shadow: 0 10px 25px;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); 
    background-color: rgb(37, 13, 13);
-     margin:80px auto;   
+     /* margin:80px auto;    */
 }
 
-data p{
-    font-size: 22px;
+ p{
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-select{
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin: 10px auto;
+.option{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
 }
 
+.option li{
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3sec;
+}
+
+.option li:hover{
+    background: rgba(230, 215, 190, 0.9);
+    border-color: #2563eb;
+}
+
+.option input{
+    margin-right: 10px;
+}
 button{
     background-color: white;
-    width: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 2rem;
     border-radius: 1rem;
     border: 1px  solid white;
+    cursor: pointer;
+    transition: 0.3sec;
+    padding: 12px;
+    margin-top: auto;
+}
+
+button:hover{
+     background: rgba(230, 215, 190, 0.9);
+     transform: scale(1.03);
 }
