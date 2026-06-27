@@ -5,7 +5,7 @@
 }
 body{
     background-image: url(back.png);
-    background-size:cover ;
+    background-size: cover ;
 }
 
 .header{
@@ -33,4 +33,45 @@ a{
 
 h2{
     align-content: start;
+}
+
+.quiiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.data{
+   width: 300px;
+   height: 300px;
+   color: rgb(255, 255, 255); 
+   padding: 30px;
+   border-radius: 15px;
+   box-shadow: 0 10px 25px;
+   background-color: rgb(37, 13, 13);
+     margin:80px auto;   
+}
+
+data p{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+select{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+}
+
+button{
+    background-color: white;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 1px  solid white;
 }
