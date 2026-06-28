@@ -70,14 +70,12 @@ h2{
     margin-bottom: 20px;
 }
 
+  
 .option{
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.option li{
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 15px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -85,14 +83,17 @@ h2{
     transition: 0.3sec;
 }
 
-.option li:hover{
+.option:hover{
     background: rgba(230, 215, 190, 0.9);
-    border-color: #fff;
+    border-color: #fff; 
 }
 
 .option input{
+    width: auto;
     margin-right: 10px;
 }
+ 
+
 button{
     background-color: white;
     width: 100%;
@@ -106,6 +107,7 @@ button{
     transition: 0.3sec;
     padding: 12px;
     margin-top: auto;
+    font-size: 20px
 }
 
 button:hover{
